@@ -1,0 +1,28 @@
+RewriteEngine On
+
+RewriteRule ^home/?$ pages/home.php [NC,L]
+RewriteRule ^quem-somos/?$ pages/quem-somos.php [NC,L]
+RewriteRule ^pesquisa/?$ pages/pesquisa.php [NC,L]
+RewriteRule ^editar/?$ pages/editar.php [NC,L]
+RewriteRule ^cadastro-usuario/?$ pages/cadastro-usuario.php [NC,L]
+RewriteRule ^lembrar-senha/?$ pages/lembrar-senha.php [NC,L]
+RewriteRule ^cadastro-postagem/?$ pages/cadastro-postagem.php [NC,L]
+RewriteRule ^inicio/?$ pages/inicio.php [NC,L]
+RewriteRule ^caduser/?$ pages/caduser.php [NC,L]
+RewriteRule ^ver-postagem/([a-z0-9-]+)/?$ pages/ver-postagem.php?id=$1 [NC,L]
+
+
+RewriteRule ^perfil/([a-z0-9-]+)/([a-z0-9-]+)/?$ pages/perfil.php?id=$1&autor=$2 [NC,L]
+RewriteRule ^ver-noticia/([a-z0-9-]+)/?$ pages/ver-noticia.php?id=$1 [NC,L]
+RewriteRule ^ver-noticia/([a-z0-9-]+)/([a-z0-9-]+)/?$ pages/ver-noticia.php?titulo=$1&id=$2 [NC,L]
+
+
+
+RewriteRule ^editar-postagem/?$ pages/editar-postagem.php [NC,L]
+RewriteRule ^meu-perfil(.*)$ pages/meu-perfil.php [NC,L]
+RewriteRule ^podcast/?$ pages/podcast.php [NC,L]
+RewriteRule ^gifs/?$ pages/gifs.php [NC,L]
+RewriteRule ^fetch/?$ pages/fetch.php [NC,L]
+RewriteRule ^gifs/pagina/([a-z0-9-]+)/?$ pages/gifs.php?pagina=$1 [NC,L]
+
+
